@@ -3,6 +3,8 @@ import { FaChevronDown } from "react-icons/fa6";
 import img1 from "../../assets/images/Mask Group.png";
 import img2 from "../../assets/images/Vector 11.png";
 import img3 from "../../assets/images/Vector 12.png";
+import Svg12 from "../../assets/svg/Svg12";
+import Svg13 from "../../assets/svg/Svg13";
 
 const Visitors = () => {
   return (
@@ -10,14 +12,24 @@ const Visitors = () => {
       <div className="visitors_container">
         <div className="visitors_box">
           <div className="visitor">
-            <h6>Visitor and Revenue</h6>
+            <h6> Visitor and Revenue</h6>
             <p>
               This Week <FaChevronDown />
             </p>
           </div>
           <div className="visitor_revenue">
-            <p>Visitors</p>
-            <p> Revenue</p>
+            <p>
+              <span>
+                <Svg12 />
+              </span>
+              Visitors
+            </p>
+            <p>
+              <span>
+                <Svg13 />
+              </span>
+              Revenue
+            </p>
           </div>
           <div className="wave_container">
             <img src={img2} alt="" className="wave1" />
@@ -33,7 +45,6 @@ const Visitors = () => {
             <h6>Sun</h6>
           </div>
         </div>
-
         <div className="total_patient_container">
           <h5>Total Patient</h5>
           <h3>
@@ -41,7 +52,6 @@ const Visitors = () => {
           </h3>
           <p>20 patient canceled</p>
           <p className="patient_reschedule">50 patient reschedule</p>
-
           <div className="revenue_container">
             <div>
               <h6>Revenue This Week</h6>

@@ -1,5 +1,5 @@
 * {
-  /* overflow-x: hidden; */
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -24,10 +24,29 @@ body {
   padding: 3rem 2rem;
   gap: 3rem;
   font-size: 1.5rem;
-  box-shadow: 2px 2px 2px #fef4f4;
+  box-shadow: 6px 6px 12px rgb(180 165 165 / 20%);
   height: 100vh;
   position: fixed;
   background-color: #fff;
+}
+
+.sidebar_wrapper div:not(:first-child):nth-child(n) {
+  background: rgb(255, 255, 255);
+  padding: 0.4rem;
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a8a8a8;
+  text-align: center;
+}
+
+.sidebar_wrapper div:not(:first-child):nth-child(n):hover {
+  background: #fddac1;
+  color: #feb27c;
 }
 
 /* HomeComponent Css */
@@ -41,7 +60,23 @@ body {
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-between;
+}
+
+.doctor_profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.doctor_profile h3 {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.doctor_profile p {
+  color: #a8a8a8;
+  font-size: 0.875rem;
 }
 
 /*  DailyUpdate component */
@@ -84,10 +119,15 @@ body {
   font-weight: 500;
 }
 
+.update_graph {
+  margin-top: 3rem;
+}
+
 .daily_Update_wrapper p {
   font-size: 0.875rem;
   font-weight: 400;
   margin-left: 0.9rem;
+  color: #a8a8a8;
 }
 
 /* recentPatient Component  */
@@ -97,6 +137,7 @@ body {
   font-weight: 500;
   margin-bottom: 0.7rem;
 }
+
 .recent_pateint {
   display: flex;
   gap: 0.9rem;
@@ -171,10 +212,14 @@ body {
   color: #a8a8a8;
 }
 
+.visitor_revenue span {
+  margin: 0 0.4rem;
+}
+
 .wave_container {
   position: absolute;
   left: 2rem;
-  top: 8rem;
+  top: 6rem;
 }
 
 .wave1 {
@@ -229,7 +274,7 @@ body {
 }
 
 .patient_reschedule {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .revenue_container {
@@ -243,7 +288,6 @@ body {
   width: 100%;
   border-bottom-left-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
-
 }
 
 .revenue_container h6 {
@@ -289,7 +333,7 @@ body {
 }
 
 .patient_box h4 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
@@ -302,6 +346,7 @@ body {
   font-size: 0.875rem;
   padding: 0.7rem;
   text-align: center;
+  font-weight: 500;
 }
 
 .patient_list {
@@ -330,6 +375,16 @@ body {
   align-items: center;
 }
 
+.patient_info h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.patient_info p {
+  font-size: 0.875rem;
+  color: #a8a8a8;
+}
+
 .patient_list_btn {
   background-color: #fff;
   background: none;
@@ -344,6 +399,26 @@ body {
 }
 
 /* Calender Component */
+
+.search_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.client_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client_name h6 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
 
 .react-calendar {
   width: 20rem;
@@ -416,6 +491,7 @@ abbr[title] {
   color: #fff;
   border-radius: 100%;
 }
+
 .react-calendar__tile--now:enabled:hover,
 .react-calendar__tile--now:enabled:focus {
   background: #6f48eb33;
@@ -436,31 +512,34 @@ abbr[title] {
   color: white;
   border-radius: 100%;
   height: 2.8rem;
-  /* width: 1rem; */
   font-size: 1rem;
 }
+
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
   background: #b0c191;
   color: white;
   height: 2.8rem;
 }
+
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #f8f8fa;
 }
+
 .react-calendar__tile--range {
   background: #f8f8fa;
   color: #b0c191;
   border-radius: 100%;
 }
+
 .react-calendar__tile--rangeStart {
   border-radius: 100%;
   background: #6f48eb;
   color: white;
 }
+
 .react-calendar__tile--rangeEnd {
   border-radius: 100%;
-
   background: #b0c191;
   color: white;
 }

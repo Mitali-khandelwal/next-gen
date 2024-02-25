@@ -46,19 +46,22 @@ const patientlist = [
     name: "Jefri Mikael ",
     time: "09.10 - 10.20 am ",
     btn: <LuChevronRight />,
-  }, {
+  },
+  {
     id: 7,
     profile: <Svg7 />,
     name: "Jefri Mikael ",
     time: "09.10 - 10.20 am ",
     btn: <LuChevronRight />,
-  }, {
+  },
+  {
     id: 7,
     profile: <Svg7 />,
     name: "Jefri Mikael ",
     time: "09.10 - 10.20 am ",
     btn: <LuChevronRight />,
-  }, {
+  },
+  {
     id: 9,
     profile: <Svg7 />,
     name: "Jefri Mikael ",
@@ -80,15 +83,12 @@ const TotalPatients = () => {
             <div className="patient_list_wrapper">
               <div className="patient_list_container">
                 {item.profile}
-                <div>
+                <div className="patient_info">
                   <h4>{item.name}</h4>
                   <p>{item.time}</p>
                 </div>
               </div>
-<button className="patient_list_btn">
-{item.btn}
-</button>
-             
+              <button className="patient_list_btn">{item.btn}</button>
             </div>
           ))}
         </div>

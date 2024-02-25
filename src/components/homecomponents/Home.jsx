@@ -12,9 +12,8 @@ const Home = () => {
       <div>
         <Sidebar />
       </div>
-
       <div className="home_container">
-        <div>
+        <div className="doctor_profile">
           <h3>Dr. Narsimha rao</h3>
           <p>Hi Doctor, Let's check the schedule with the patient today</p>
         </div>
@@ -24,10 +23,8 @@ const Home = () => {
         <div>
           <RecentPatient />
         </div>
-        <Visitors/>
+        <Visitors />
       </div>
-
-
       <div>
         <Appointments />
       </div>

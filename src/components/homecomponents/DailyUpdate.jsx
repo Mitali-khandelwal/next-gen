@@ -36,7 +36,7 @@ const dailydata = [
   },
   {
     id: 4,
-    img: <Svg6/>,
+    img: <Svg6 />,
     title: "Report",
     graph: <Svg10 />,
     count: "870",
@@ -55,9 +55,8 @@ const DailyUpdate = () => {
               <h6>{item.title}</h6>
               <h5>{item.count}</h5>
             </div>
-            <div>{item.graph}</div>
+            <div className="update_graph">{item.graph}</div>
           </div>
-
           <div>
             <p>{item.lastUpdate}</p>
           </div>

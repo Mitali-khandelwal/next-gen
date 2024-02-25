@@ -11,12 +11,24 @@ import "../../App.css";
 const Sidebar = () => {
   return (
     <div className="sidebar_wrapper">
-      <BiMenuAltRight />
-      <BiHomeAlt />
-      <LiaCalendarMinusSolid />
-      <PiChatTeardropTextThin />
-      <RiUserLine />
-      <IoSettingsOutline />
+      <div>
+        <BiMenuAltRight />
+      </div>
+      <div>
+        <BiHomeAlt />
+      </div>
+      <div>
+        <LiaCalendarMinusSolid />
+      </div>
+      <div>
+        <PiChatTeardropTextThin />
+      </div>
+      <div>
+        <RiUserLine />
+      </div>
+      <div>
+        <IoSettingsOutline />
+      </div>
     </div>
   );
 };
